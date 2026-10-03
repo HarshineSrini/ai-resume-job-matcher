@@ -1,16 +1,58 @@
-# React + Vite
+# AI Resume & Job Matcher
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An AI-powered web application that analyzes a resume against a job description, calculates a skill match percentage, identifies matched and missing skills, and provides recommendations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Upload a resume in PDF format
+- Extract text from the resume
+- Extract relevant technical skills
+- Analyze job descriptions
+- Calculate resume-to-job match percentage
+- Display matched skills
+- Identify missing skills
+- Provide skill recommendations
+- Responsive React frontend
+- FastAPI backend API
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- CSS
 
-## Expanding the Oxlint configuration
+### Backend
+- Python
+- FastAPI
+- Uvicorn
+- pypdf
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Tools
+- Git
+- GitHub
+- VS Code
+
+## Project Structure
+
+```text
+ai-resume-job-matcher/
+│
+├── backend/
+│   ├── main.py
+│   ├── matcher.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── main.jsx
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+│
+├── .gitignore
+└── README.md
